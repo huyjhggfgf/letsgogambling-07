@@ -233,12 +233,14 @@ while True:
                         if shopc == 0:
                             menu = 0
                         elif shopc == 1:
-                            angcoins -= 1
-                            cross += 1
+                            if angcoins >= 1:
+                                angcoins -= 1
+                                cross += 1
                             print("Bought Cross")
                         elif shopc == 2:
-                            angcoins -= 1
-                            cross += 1
+                            if angcoins >= 1:
+                                angcoins -= 1
+                                cross += 1
                             print("Bought Holy Hand Grenade")
                         print("Not for you, Uninteresting mortal.")
                 elif menu == 666:
